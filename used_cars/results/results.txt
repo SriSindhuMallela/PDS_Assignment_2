@@ -1,0 +1,28 @@
+missing values for each column:
+
+S.no                    0
+Name                    0
+Location                0
+Year                    0
+Kilometers_Driven       0
+Fuel_Type               0
+Transmission            0
+Owner_Type              0
+Mileage                 2
+Engine                 36
+Power                  36
+Seats                  38
+New_Price            5032
+Price                   0
+
+'Mileage', 'Engine', 'Power': for these columns replaced NA values with mean, Mean is the best replacement technique because it preserves the central tendency 
+
+seats: The number of seats is a discrete value, and imputing missing values with the mode (most frequent value) is suitable here, as it preserves the categorical nature of the data.
+
+New_Price: It has a significant number of missing values (5032). Depending on the importance of this column to our analysis,  might consider dropping it entirely,especially if these values are missing because they are not available. 
+If we want to keep the column, consider imputing the missing values, but be cautious because a large number of imputations could introduce bias.
+
+
+
+
+
